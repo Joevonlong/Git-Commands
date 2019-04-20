@@ -1,32 +1,33 @@
-Git Commands
+Git related Commands
 ============
 
 _A list of my commonly used Git commands_
 
 
 ## Content
-Git Commands
+[Git Commands](#gitcommands)
 
 - [Getting & Creating Projects](#creating)
 - [Basic Snapshotting](#basicsnapshot)
 
-SSH Commands
+[SSH Commands](#sshcommands)
 
 
 
 
-<a id= "creating"/>
+## Git Commands <a id="gitcommands"/>
 
-### Getting & Creating Projects
+### Getting & Creating Projects  <a id= "creating"/>
+
 
 | Command | Description |
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
-<a id="basicsnapshot"/>
 
-### Basic Snapshotting
+
+### Basic Snapshotting <a id="basicsnapshot"/>
 
 | Command | Description |
 | ------- | ----------- |
@@ -77,7 +78,12 @@ SSH Commands
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 
 
-## SSH
+#### git config
+
+
+
+
+## SSH <a id="sshcommands"/>
 
 ### some tutorials
 [简书 - Git的多SSH Key解决方案(macOS)](https://www.jianshu.com/p/95e00370fa2c)
