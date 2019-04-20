@@ -16,6 +16,7 @@ SSH Commands
 
 
 <a id= "creating"/>
+
 ### Getting & Creating Projects
 
 | Command | Description |
@@ -24,6 +25,7 @@ SSH Commands
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
 <a id="basicsnapshot"/>
+
 ### Basic Snapshotting
 
 | Command | Description |
