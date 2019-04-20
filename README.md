@@ -5,9 +5,17 @@ _A list of my commonly used Git commands_
 
 
 ## Content
-- [Getting & Creating Projects](#creating)
+Git Commands
 
-<a name= "creating"/>
+- [Getting & Creating Projects](#creating)
+- [Basic Snapshotting](#basicsnapshot)
+
+SSH Commands
+
+
+
+
+<a id= "creating"/>
 ### Getting & Creating Projects
 
 | Command | Description |
@@ -15,6 +23,7 @@ _A list of my commonly used Git commands_
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
+<a id="basicsnapshot"/>
 ### Basic Snapshotting
 
 | Command | Description |
@@ -64,4 +73,17 @@ _A list of my commonly used Git commands_
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+
+
+## SSH
+
+### some tutorials
+[简书 - Git的多SSH Key解决方案(macOS)](https://www.jianshu.com/p/95e00370fa2c)
+
+[Github - Checking for existing SSH keys](https://help.github.com/en/articles/checking-for-existing-ssh-keys)  
+
+[Github - Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+[Github - Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
+
 
