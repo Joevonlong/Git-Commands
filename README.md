@@ -83,6 +83,7 @@ _A list of my commonly used Git commands_
 
 ### git fetch
 
+
 >
 $ git fetch origin master
 >
@@ -106,7 +107,8 @@ $ git merge origin/master
 #### git merge
 - [git-merge完全解析](https://www.jianshu.com/p/58a166f24c81)
 
-
+#### git log
+查看所有的commit 信息
 
 ## SSH <a id="sshcommands"/>
 
