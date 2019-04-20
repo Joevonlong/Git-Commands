@@ -94,4 +94,32 @@ _A list of my commonly used Git commands_
 
 [Github - Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
+[Gitlab - SSH Introduction](https://gitlab.com/help/ssh/README)
+
+| Command (on MacOS) | Description |
+| ------- | ----------- |
+| ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C "your-email-address@example.com" | Generate SSH key pair |
+| eval $(ssh-agent -s)| Check env | 
+| ssh-add ~/.ssh/other\_id_rsa | Add generated SSH key |
+| touch ~/.ssh/config | creat SSH configration file |
+| ssh -T git@github.com | test whether your SSH key was added correctly |
+| pbcopy < ~/.ssh/id_ed25519.pub | Copy your public SSH key to the clipboard |
+| xclip -sel clip < ~/.ssh/id_ed25519.pub | Copy your public SSH key to the clipboard ( WSL / GNU/Linux (requires the xclip package)) |
+| cat ~/.ssh/id_ed25519.pub \| clip | Copy your public SSH key to the clipboard ( Git Bash on Windows) |
+
+
+config file looks like :
+> 
+#
+\# github
+#
+Host github.com
+IdentityFile ~/.ssh/id_rsa_github
+#
+\# company gitlab
+#
+Host gitlab.company.com
+IdentityFile ~/.ssh/id_rsa_gitlab
+
+
 
