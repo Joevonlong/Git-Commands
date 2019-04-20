@@ -13,6 +13,9 @@ _A list of my commonly used Git commands_
 [SSH Commands](#sshcommands)
 
 
+## Tutorials and Handbooks
+- [廖雪峰的官方网站-Git](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+- [Git Documentation Book](https://git-scm.com/book/en/v2)
 
 
 ## Git Commands <a id="gitcommands"/>
@@ -53,6 +56,7 @@ _A list of my commonly used Git commands_
 | `git checkout -- [file-name.txt]` | Discard changes to a file |
 | `git merge [branch name]` | Merge a branch into the active branch |
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
+| `git merge origin/yourbranch ` | Merge remote yourbranch into current local branch |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
 
@@ -77,9 +81,30 @@ _A list of my commonly used Git commands_
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 
+### git fetch
+
+>
+$ git fetch origin master
+>
+$ git log -p master..origin/master
+>
+$ git merge origin/master
+
+
+以上命令的含义：
+
+首先从远程的origin的master主分支下载最新的版本到origin/master分支上
+然后比较本地的master分支和origin/master分支的差别
+最后进行合并.
+
+
+#### git diff
+
 
 #### git config
 
+#### git merge
+- [git-merge完全解析](https://www.jianshu.com/p/58a166f24c81)
 
 
 
